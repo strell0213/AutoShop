@@ -1,0 +1,16 @@
+﻿<Window x:Class="AutoShop.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoShop"
+        mc:Ignorable="d"
+        Title="АвтоЛайн" Height="450" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/logo.png">
+    <Grid Background="#FF5B5B6B">
+        <Button x:Name="BackButton" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,15,0,0" Content="Назад" FontWeight="Bold" FontSize="14" Foreground="White" Background="#FF24252F" Width="60" Height="30" Click="BackButton_Click"></Button>
+        <TextBlock x:Name="AboutTextBlock" Foreground="White" FontWeight="Bold" FontSize="16" Width="250" Height="300" TextWrapping="Wrap" ></TextBlock>
+        <TextBlock Foreground="White" Text="Изменить статус" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,80" FontWeight="Bold"></TextBlock>
+        <ComboBox x:Name="ChangeStatusBox" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,45" Width="150" Height="25" DropDownClosed="ChangeStatusBox_DropDownClosed"></ComboBox>
+        <TextBlock x:Name="SText" Foreground="#FF5EFF48" Text="Успешно!" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,15" Visibility="Hidden"></TextBlock>
+    </Grid>
+</Window>
